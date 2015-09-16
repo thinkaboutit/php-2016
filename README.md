@@ -1,2 +1,3 @@
 # php
-creare pagine php
+vedremo come creare pagine php
+ed integrarle in wordpress!
