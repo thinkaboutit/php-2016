@@ -28,10 +28,10 @@ get_header(); ?>
 				'paged' => $paged
 				);
 
-			$mia_query = new WP_Query($args);?>
+			$richiedo_query = new WP_Query($args);?>
 
 
-		<?php if ( $mia_query->have_posts() ) : ?>
+		<?php if ( $richiedo_query->have_posts() ) : ?>
 
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
@@ -41,7 +41,7 @@ get_header(); ?>
 
 			<?php
 			
-			while ( $mia_query ->have_posts() ) : $mia_query ->the_post();
+			while ( $richiedo_query ->have_posts() ) : $richiedo_query ->the_post();
 
 				/*
 				 * Include the Post-Format-specific template for the content.
